@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+:root {
+    --primary-dark-violet: hsl(256, 26%, 20%);
+    --primary-grayish-blue: hsl(216, 30%, 68%);
+    --neutral-dark-violet:hsl(270, 9%, 17%);
+    --neutral-grayish-violet:hsl(273, 4%, 51%);
+    --neutral-light-gray: hsl(0, 0%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.phone{
+    display: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    z-index: 2;
+    padding: 20px 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    background: var(--neutral-light-gray);
+}
+nav .logo img{
+    width: 115px;
+}
+nav .items {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif; 
+}
+nav .items ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+nav .items ul li{
+    margin: 0px 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--neutral-grayish-violet);
+}
+nav .items ul li:hover{
+    color: var(--primary-dark-violet);
+    cursor: pointer;
+}
+
+nav .items li.button{
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif; 
+    padding: 15px 30px;
+    border: 1px solid var(--primary-dark-violet);
+    color: var(--neutral-dark-violet);
+    font-weight: 700;
+    background: none;
+}
+nav .items li.button:hover{
+    cursor: pointer;
+    color: var(--neutral-light-gray);
+    background: var(--neutral-dark-violet);
+}
+
+
+
+/* first section */
+
+section.first{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 105px 160px 0px;
+    /* background: var(--primary-dark-violet); */
+    background: linear-gradient(to bottom, 
+        var(--primary-dark-violet) 0%,
+        var(--primary-dark-violet) 80%,
+        white 80%,
+       white 100%
+
+    );
+    z-index: 1;
+    
+}
+
+section.first img.background{
+    position: absolute;
+    top: -55px;
+    right: 0;
+}
+
+section.first .barre, section.second .barre{
+    width: 150px;
+    background: var(--neutral-light-gray);
+    height: 1px;
+    margin-bottom: 70px;
+}
+section.first .text{
+    color: white;
+    margin-right: 35px;
+}
+section.first .text p{
+  font-size: 16px;
+  margin: 35px 0px;
+  font-family: 'DM Serif Display', sans-serif;
+  color: var(--neutral-light-gray);
+}
+section.first .text h3{
+  font-size: 72px;
+}
+section.first .text button{
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif; 
+    padding: 15px 30px;
+    border: 1px solid var(--neutral-light-gray);
+    color: var(--neutral-light-gray);
+    font-weight: 700;
+    background: none;
+    letter-spacing: 1px;
+}
+
+section.second {
+    padding: 150px;
+    background: white;
+}
+
+section.second .barre{
+    margin-bottom: 75px;
+    background: var(--neutral-dark-violet);
+}
+section.second .first-part .items{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0px 110px 0px;
+}
+section.second .first-part h3{
+    font-size: 70px;
+}
+section.second .first-part .items .item {
+    margin-right: 50px;
+}
+section.second .first-part .items .item h5 {
+    font-size: 28px;
+    margin: 40px 0px 25px 0px;
+}
+section.second .first-part .items .item p {
+    color: var(--neutral-grayish-violet);
+}
+section.second .first-part .items .item img{
+    width: 85px;
+}
+
+section.second .card{
+    margin: 120px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-dark-violet);
+    padding: 80px;
+    position: relative;
+}
+section.second .card img.background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    
+}
+section.second .card h4 {
+    font-size: 55px;
+    color: var(--neutral-light-gray);
+}
+section.second .card button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif; 
+    border: 1px solid var(--neutral-light-gray);
+    color: var(--neutral-light-gray);
+    font-weight: 700;
+    background: none;
+    letter-spacing: 2px;
+}
+
+footer {
+    position: relative;
+    padding: 65px 160px;
+    background: var(--neutral-light-gray);
+}
+
+footer .footer-header .reseaux i{
+    font-size: 28px;
+    margin-right: 10px;
+    color: var(--neutral-grayish-violet);
+}
+footer .footer-header .reseaux i:hover{
+    color: var(--neutral-dark-violet);
+    cursor: pointer;
+}
+footer .separation {
+    width: 100%;
+    height: 1px;
+    background: var(--primary-grayish-blue);
+    margin: 40px 0px 55px;
+}
+footer .informations {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 170px;
+    font-family: 'Karla', sans-serif; 
+    text-transform: uppercase;
+}
+
+footer .informations .column h5{
+    color: var(--neutral-grayish-violet);
+    font-size: 16px;
+}
+footer .informations .column .elems p{
+    margin: 15px 0px;
+    color: var(--neutral-dark-violet);
+    font-weight: 700;
+}
+footer img.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer .footer-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+@media (max-width: 375px){
+    
+    .phone{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    nav{
+        padding: 30px 25px;
+        position: relative;
+    }
+    nav #menu.items{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    }
+    nav .items ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+        width: 100%;
+        background: var(--neutral-dark-violet);
+        height: 100%;
+    }
+    nav .items ul img.background{
+        position: absolute;
+        bottom: 0;
+
+    }
+    nav .items ul li {
+        margin: 20px 0px;
+        color: var(--neutral-light-gray);
+        font-size: 22px;
+    }
+    nav .items ul li.button, nav .items ul li.button:hover{
+        color: var(--neutral-light-gray);
+        border: solid 1px var(--neutral-light-gray);
+        padding: 20px 100px;
+    }
+
+    nav #menu.items.hide{
+        display: none;
+    }
+    
+    /* first section */
+
+    section.first{
+        padding: 0;
+        display: block;
+    }
+    section.first .left{
+        padding: 95px 25px;
+        background: var(--primary-dark-violet);
+        position: relative;
+        
+    }
+    section.first .text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+    section.first .text p{
+        text-align: center;
+        font-size: 17px;
+    }
+
+    section.first .text h3 {
+        font-size: 48px;
+        text-align: center;
+    }
+    section.first #bg-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    section.first #bg-right{
+        position: absolute;
+        bottom: -160px;
+        right: 0;
+    }
+    /* second section */
+    section.second{
+        position: relative;
+        padding: 140px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* error */
+   
+    
+  
+
+    section.second .barre{
+        margin-bottom: 45px;
+    }
+    section.second .first-part{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.second .first-part h3{
+        font-size: 46px;
+    }
+
+    section.second .first-part .items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        }
+    section.second .first-part .items .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 65px;
+    }
+    section.second .first-part .items .item p {
+        text-align: center;
+        font-family: 'Karla', sans-serif; 
+        font-weight: 400;
+    }
+    section.second .card{
+        margin-top: 0px;
+        padding: 75px 46px;
+        flex-direction: column;
+    }
+    section.second .card h4{
+        margin-bottom: 45px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    footer{
+        position: relative;
+        padding: 90px 22px;
+    }
+
+    footer .footer-header{
+        flex-direction: column;
+    }
+    footer .footer-header .logo{
+        
+    }
+    footer  .separation{
+        margin: 0px;
+    }
+    footer .footer-header .reseaux{
+        margin: 30px;
+    }
+    footer .informations{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+    }
+    footer .informations .column h5{
+        margin: 40px 0px;
+        text-align: center;
+    }
+    footer .informations .column p{
+        text-align: center;
+    }
+
+    .btn{
+        z-index: 999;
+    }
+    .hide{
+        display: none;
+    }
+}
+
